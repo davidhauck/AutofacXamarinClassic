@@ -7,22 +7,21 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
-using UIKit;
 
-namespace MvvmXamarinClassic.iOS
+namespace MvvmXamarinClassic.iOS.Views
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("SecondView")]
+    partial class SecondView
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton Button { get; set; }
+        UIKit.UITextField TextField { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (Button != null) {
-                Button.Dispose ();
-                Button = null;
+            if (TextField != null) {
+                TextField.Dispose ();
+                TextField = null;
             }
         }
     }
